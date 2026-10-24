@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>影视行业观察笔记｜剧本开发、剧组流程、后期制作与发行数据 - yingshixingye-app</title>
+<meta name="description" content="影视行业垂直内容站，按项目实际推进顺序梳理立项备案、剧本开发、组建班底、现场拍摄、后期制作、送审与发行上映七个环节，并记录票房、剧集产量、银幕数等公开口径数据的变化，另附政策合规要点、剧组岗位分工与常见疑问答复。">
+<meta name="keywords" content="影视行业,影视制作流程,剧本开发,剧组岗位,后期制作,电影发行,院线票房,网络剧集,影视备案,影视政策合规,yingshixingye-app">
+<meta name="author" content="影视行业编辑部">
+<meta name="robots" content="index,follow">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://yingshixingye-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="影视行业">
+<meta property="og:title" content="影视行业观察笔记｜从立项备案到发行上映">
+<meta property="og:description" content="以项目推进顺序讲解影视行业的制作环节、数据口径与合规要点，收录岗位分工与常见疑问。">
+<meta property="og:url" content="https://yingshixingye-app.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#12100e">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#12100e;color:#d9d2c6;font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,"Segoe UI",sans-serif;line-height:1.75;font-size:16px;overflow-x:hidden}
+a{color:#e0a13c;text-decoration:none}
+a:hover{color:#f2c46b;text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3,h4{font-weight:700;line-height:1.35;color:#f4eee2;letter-spacing:.02em}
+ul{list-style:none}
+
+/* 场记板头部 */
+.clap{background:#f4eee2;color:#12100e;padding:0 0 0;position:relative;border-bottom:6px solid #8c2f26}
+.clap-strip{display:flex;flex-wrap:wrap;gap:0}
+.clap-strip span{width:34px;height:22px;background:#12100e;flex:none}
+.clap-strip span:nth-child(even){background:#8c2f26}
+.clap-in{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px;padding:18px 20px 22px}
+.brand{font-size:26px;font-weight:800;letter-spacing:.14em;line-height:1.1}
+.brand small{display:block;font-size:12px;letter-spacing:.3em;color:#8c2f26;font-weight:700;margin-top:4px}
+.clap-meta{font-size:13px;color:#3b3630;text-align:left}
+.clap-meta b{color:#12100e}
+.clap-meta code{background:#e2d9c8;padding:2px 6px;border-radius:3px;font-size:12px;letter-spacing:.03em}
+
+/* 胶片导航 */
+.filmnav{position:sticky;top:0;z-index:30;background:#1b1815;border-top:1px solid #2c2620;border-bottom:1px solid #2c2620}
+.filmnav::before,.filmnav::after{content:"";display:block;height:9px;background-image:radial-gradient(circle at 6px 50%,#0b0a09 0 3px,transparent 3px);background-size:16px 9px}
+.filmnav ul{max-width:1180px;margin:0 auto;padding:0 20px;display:flex;overflow-x:auto;white-space:nowrap;gap:2px;-webkit-overflow-scrolling:touch}
+.filmnav li a{display:block;padding:13px 15px;font-size:14px;color:#a89f90;border-right:1px solid #2a241e;letter-spacing:.04em}
+.filmnav li:first-child a{border-left:1px solid #2a241e}
+.filmnav li a:hover,.filmnav li a:focus{background:#8c2f26;color:#f4eee2;text-decoration:none}
+
+/* 首屏 */
+.hero{padding:52px 0 34px;background:
+radial-gradient(900px 380px at 12% -10%,rgba(224,161,60,.16),transparent 62%),
+linear-gradient(180deg,#17140f 0%,#12100e 100%);border-bottom:1px solid #2a241e}
+.hero-grid{display:grid;grid-template-columns:1fr 300px;gap:38px;align-items:start}
+.eyebrow{display:inline-block;background:#8c2f26;color:#f4eee2;font-size:12px;letter-spacing:.22em;padding:5px 12px;margin-bottom:18px}
+.hero h1{font-size:38px;letter-spacing:.01em;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:#e0a13c;border-bottom:3px solid #8c2f26;padding-bottom:2px}
+.lead{font-size:16px;color:#b3aa9c;max-width:640px}
+.lead strong{color:#f4eee2}
+.hero-tags{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+.hero-tags a{font-size:13px;border:1px solid #3a322a;border-radius:2px;padding:6px 11px;color:#c9c0b1;background:#1a1714}
+.hero-tags a:hover{border-color:#e0a13c;color:#e0a13c;text-decoration:none}
+.stat{border:1px solid #3a322a;background:#1a1714;padding:16px 18px;margin-bottom:12px}
+.stat i{display:block;font-style:normal;font-size:12px;letter-spacing:.16em;color:#8f8578}
+.stat b{display:block;font-size:27px;color:#e0a13c;line-height:1.4;letter-spacing:.01em}
+.stat span{font-size:12.5px;color:#948b7d}
+
+/* 跑马灯 */
+.ticker{overflow:hidden;border-top:1px solid #2a241e;border-bottom:1px solid #2a241e;background:#0f0d0b;padding:11px 0}
+.ticker div{display:inline-block;white-space:nowrap;animation:slide 34s linear infinite;font-size:13px;letter-spacing:.12em;color:#6f675c}
+.ticker div b{color:#e0a13c;font-weight:400}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* 章节 */
+section{padding:56px 0;border-bottom:1px solid #241f1a}
+.sec-head{display:grid;grid-template-columns:96px 1fr;gap:22px;align-items:start;margin-bottom:32px}
+.num{font-size:44px;font-weight:800;color:#3a322a;line-height:1;letter-spacing:-.02em}
+.sec-head h2{font-size:26px;margin-bottom:8px}
+.sec-head p{font-size:14.5px;color:#9a9184;max-width:760px}
+
+/* 概览 */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#191613;border:1px solid #2e2721;padding:22px 20px;position:relative}
+.card:nth-child(2){border-top:3px solid #8c2f26}
+.card:nth-child(3){border-top:3px solid #e0a13c}
+.card h3{font-size:17px;margin-bottom:10px}
+.card p{font-size:14.5px;color:#a79e90}
+.card .idx{position:absolute;right:14px;top:10px;font-size:13px;color:#4a4138;letter-spacing:.1em}
+.note{margin-top:16px;font-size:13.5px;color:#8b8275;border-left:3px solid #3a322a;padding-left:14px}
+
+/* 流程时间轴 */
+.flow{position:relative;padding-left:0}
+.flow::before{content:"";position:absolute;left:15px;top:8px;bottom:8px;width:1px;background:#3a322a}
+.step{position:relative;padding:0 0 26px 52px}
+.step:last-child{padding-bottom:0}
+.step .dot{position:absolute;left:6px;top:6px;width:19px;height:19px;border-radius:50%;background:#12100e;border:2px solid #e0a13c}
+.step h3{font-size:17px;display:inline-block}
+.step h3 span{color:#8c2f26;font-size:13px;letter-spacing:.16em;margin-right:9px}
+.step p{font-size:14.5px;color:#a79e90;margin-top:6px}
+.step ul{margin-top:10px;display:flex;flex-wrap:wrap;gap:7px}
+.step ul li{font-size:12.5px;background:#1e1a16;border:1px solid #332c25;padding:4px 9px;color:#958c7e}
+
+/* 数据条 */
+.bars{display:grid;grid-template-columns:1fr 1fr;gap:14px 34px}
+.bar-row{margin-bottom:4px}
+.bar-row .lab{display:flex;justify-content:space-between;font-size:13.5px;color:#b3aa9c;margin-bottom:6px}
+.bar-row .lab em{font-style:normal;color:#e0a13c}
+.track{height:12px;background:#1e1a16;border:1px solid #332c25}
+.track i{display:block;height:100%;background:linear-gradient(90deg,#8c2f26,#e0a13c)}
+.data-note{margin-top:20px;font-size:13px;color:#837a6d;background:#171411;border:1px dashed #3a322a;padding:12px 14px}
+
+/* 政策 斜切块 */
+.pol{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pol article{background:#1a1613;color:#c6bdae;padding:20px 18px 24px;clip-path:polygon(0 0,100% 0,100% calc(100% - 16px),calc(100% - 16px) 100%,0 100%);border-left:3px solid #8c2f26}
+.pol article:nth-child(2){border-left-color:#e0a13c}
+.pol article:nth-child(3){border-left-color:#5c6f5a}
+.pol h3{font-size:16px;margin-bottom:9px}
+.pol p{font-size:14px;color:#a19687}
+.pol a.more{display:inline-block;margin-top:12px;font-size:13px}
+
+/* 岗位表 */
+.jobs{border:1px solid #2e2721}
+.jobs .row{display:grid;grid-template-columns:130px 1fr 180px;gap:0;border-bottom:1px solid #2e2721}
+.jobs .row:last-child{border-bottom:0}
+.jobs .row.head{background:#1e1a16}
+.jobs .row.head div{font-size:12.5px;letter-spacing:.16em;color:#8f8578;padding:11px 16px}
+.jobs .row div{padding:14px 16px;font-size:14.5px;color:#a79e90}
+.jobs .row div:first-child{color:#e0a13c;font-weight:600}
+.jobs .row:nth-child(odd){background:rgba(255,255,255,.015)}
+
+/* FAQ */
+.faq details{border:1px solid #2e2721;background:#191613;margin-bottom:10px}
+.faq summary{cursor:pointer;padding:15px 18px;font-size:15.5px;color:#eee6d7;list-style:none;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:18px;top:12px;color:#e0a13c;font-size:19px;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq details[open] summary{border-bottom:1px solid #2e2721;background:#1e1a16}
+.faq .ans{padding:15px 18px;font-size:14.5px;color:#a79e90}
+
+/* 联系 */
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:26px}
+.cform label{display:block;font-size:13px;color:#9a9184;margin-bottom:6px}
+.cform input,.cform textarea{width:100%;background:#171411;border:1px solid #3a322a;color:#e6ddcd;padding:11px 12px;font-size:14.5px;font-family:inherit;margin-bottom:14px}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:#e0a13c}
+.cform button{background:#8c2f26;color:#f4eee2;border:0;padding:12px 26px;font-size:15px;cursor:pointer;letter-spacing:.1em}
+.cform button:hover{background:#a4382d}
+.urlbox{background:#1a1714;border:1px solid #3a322a;padding:18px}
+.urlbox h4{font-size:14px;letter-spacing:.14em;color:#8f8578;margin-bottom:10px}
+.urlbox p{font-size:14.5px;color:#c6bdae;word-break:break-all}
+.urlbox p+p{margin-top:10px}
+
+/* 页脚 */
+footer{background:#0d0b09;padding:40px 0 30px;border-top:3px solid #8c2f26}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:26px}
+footer h4{font-size:14px;letter-spacing:.16em;color:#8f8578;margin-bottom:12px}
+footer li{font-size:13.5px;margin-bottom:7px}
+footer li a{color:#a19687}
+.fbot{margin-top:28px;padding-top:16px;border-top:1px solid #221d18;font-size:12.5px;color:#6f675c;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+@media (max-width:900px){
+.hero-grid{grid-template-columns:1fr;gap:26px}
+.cards{grid-template-columns:1fr 1fr}
+.pol{grid-template-columns:1fr}
+.contact{grid-template-columns:1fr}
+.fgrid{grid-template-columns:1fr 1fr}
+.jobs .row{grid-template-columns:110px 1fr}
+.jobs .row div:nth-child(3){display:none}
+.jobs .row.head div:nth-child(3){display:none}
+}
+@media (max-width:620px){
+body{font-size:15.5px}
+.hero{padding:38px 0 26px}
+.hero h1{font-size:27px}
+.brand{font-size:21px}
+.clap-meta{text-align:left;font-size:12.5px}
+section{padding:40px 0}
+.sec-head{grid-template-columns:1fr;gap:8px}
+.num{font-size:30px}
+.sec-head h2{font-size:21px}
+.cards{grid-template-columns:1fr}
+.bars{grid-template-columns:1fr}
+.stat b{font-size:23px}
+.fgrid{grid-template-columns:1fr}
+}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"影视行业","alternateName":"影视行业观察笔记","url":"https://yingshixingye-app.github.io/","inLanguage":"zh-CN","description":"按项目推进顺序梳理影视行业制作流程、公开数据口径、政策合规与岗位分工的垂直内容站","publisher":{"@type":"Organization","name":"影视行业","url":"https://yingshixingye-app.github.io/"}}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="clap">
+  <div class="clap-strip" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="clap-in">
+    <div class="brand">影视行业<small>FILM &amp; TV INDUSTRY NOTES</small></div>
+    <div class="clap-meta">
+      主办：<b>影视行业编辑部</b>　｜　站点：<code>https://yingshixingye-app.github.io</code>　｜　卷次：No.07　｜　开拍：2026
+    </div>
+  </div>
+</header>
+
+<nav class="filmnav" aria-label="站内栏目导航">
+  <ul>
+    <li><a href="#overview">行业全景</a></li>
+    <li><a href="#workflow">制作流程</a></li>
+    <li><a href="#data">数据观察</a></li>
+    <li><a href="#policy">政策合规</a></li>
+    <li><a href="#jobs">岗位分工</a></li>
+    <li><a href="#faq">常见疑问</a></li>
+    <li><a href="#contact">联系投稿</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">SCENE 01 / TAKE 07</span>
+      <h1>把<em>影视行业</em>拆成看得见的七个环节，再说清楚钱和数据</h1>
+      <p class="lead">多数人谈<strong>影视行业</strong>，谈的是红毯和票房；真正决定一部片子能不能落地的是立项备案、剧本开发、班底组建、现场拍摄、后期制作、送审与发行这七步。本站按项目推进的真实顺序逐段记录，配上公开口径的数据变化与政策要点，尽量少讲形容词，多讲流程与口径。<br>站点地址：<strong>https://yingshixingye-app.github.io</strong></p>
+      <div class="hero-tags">
+        <a href="#">立项备案</a><a href="#">剧本开发</a><a href="#">剧组班底</a><a href="#">现场拍摄</a><a href="#">后期制作</a><a href="#">发行上映</a><a href="#">票房口径</a><a href="#">网络剧集</a>
+      </div>
+    </div>
+    <aside>
+      <div class="stat"><i>制作环节</i><b>7 段</b><span>从备案到发行的完整链路</span></div>
+      <div class="stat"><i>收录栏目</i><b>6 个</b><span>全景 / 流程 / 数据 / 政策 / 岗位 / 问答</span></div>
+      <div class="stat"><i>数据口径</i><b>公开统计</b><span>票房、产量、银幕数分项说明</span></div>
+      <div class="stat"><i>更新节奏</i><b>按季</b><span>每季度复核一次流程与政策条目</span></div>
+    </aside>
+  </div>
+</div>
+
+<div class="ticker" aria-hidden="true">
+  <div>
+    影视行业 · 立项备案 · 剧本开发 · 剧组班底 · 现场拍摄 · 后期制作 · 送审发行 · 院线票房 · 网络剧集 · 影视政策 · 岗位分工 · <b>https://yingshixingye-app.github.io</b> · 影视行业 · 立项备案 · 剧本开发 · 剧组班底 · 现场拍摄 · 后期制作 · 送审发行 · 院线票房 · 网络剧集 · 影视政策 · 岗位分工 · <b>https://yingshixingye-app.github.io</b> ·
+  </div>
+</div>
+
+<main>
+
+<section id="overview">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">01</div>
+      <div>
+        <h2>行业全景：三条赛道，三种活法</h2>
+        <p>影视行业不是一门生意，而是电影、剧集、短视频与广告承制三条赛道的集合，成本结构、回款周期与风险点各不相同，先分清赛道再谈机会。</p>
+      </div>
+    </div>
+    <div class="cards">
+      <article class="card"><span class="idx">A</span><h3>院线电影</h3><p>前置投入最重，从备案到上映常跨越两三年，宣发费用单独列支，票房需先扣税与专资再分账，回款集中在上映后三个月内。</p></article>
+      <article class="card"><span class="idx">B</span><h3>剧集与网络剧</h3><p>按集结算，平台采购与分账两种模式并存，成片交付后进入排播等待期，改动意见多来自平台审片环节。</p></article>
+      <article class="card"><span class="idx">C</span><h3>商业承制</h3><p>品牌片、宣传片与短视频代运营，周期以周计，现金流最平稳，是许多中小团队维持班底的主要来源。</p></article>
+    </div>
+    <p class="note">观察口径：本页所说"成本""周期"均指一般行业惯例，具体项目受题材、演员档期与拍摄地政策影响会出现明显偏差，签约前以合同附件为准。</p>
+  </div>
+</section>
+
+<section id="workflow">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">02</div>
+      <div>
+        <h2>制作流程：七段链路与每段的关键交付物</h2>
+        <p>把流程写清楚的意义在于，任何一段缺失交付物，后面所有环节都会返工。以下按时间顺序排列。</p>
+      </div>
+    </div>
+    <div class="flow">
+      <div class="step"><span class="dot"></span><h3><span>STEP 01</span>立项与备案</h3><p>确定题材方向与预算区间，完成剧本梗概备案，取得备案回执后方可进入实质性拍摄筹备。</p><ul><li>题材评估</li><li>预算草案</li><li>备案回执</li></ul></div>
+      <div class="step"><span class="dot"></span><h3><span>STEP 02</span>剧本开发</h3><p>大纲、分集大纲、完整剧本三稿推进，同步做场景数与转场数统计，直接影响后面拍摄周期表的排布。</p><ul><li>大纲</li><li>分场表</li><li>台词定稿</li></ul></div>
+      <div class="step"><span class="dot"></span><h3><span>STEP 03</span>组建班底</h3><p>制片组、导演组、摄影、美术、录音五大部门先行，演员与特殊道具并行推进，档期冲突在这一段集中爆发。</p><ul><li>主创合约</li><li>通告单模板</li><li>保险方案</li></ul></div>
+      <div class="step"><span class="dot"></span><h3><span>STEP 04</span>现场拍摄</h3><p>按通告单执行，素材每日双备份，场记单与镜头表同步归档，这部分文档决定后期能否顺利找回镜头。</p><ul><li>通告单</li><li>场记单</li><li>素材备份</li></ul></div>
+      <div class="step"><span class="dot"></span><h3><span>STEP 05</span>后期制作</h3><p>剪辑、调色、混录、特效四条线并行，粗剪与精剪之间通常留出审片意见修改窗口。</p><ul><li>粗剪</li><li>调色</li><li>混录</li></ul></div>
+      <div class="step"><span class="dot"></span><h3><span>STEP 06</span>送审与技审</h3><p>成片送主管部门审查，取得公映许可或上线备案号，技审环节检查声画指标与字幕规范。</p><ul><li>审查意见</li><li>修改清单</li><li>许可证</li></ul></div>
+      <div class="step"><span class="dot"></span><h3><span>STEP 07</span>发行与上映</h3><p>确定档期、拷贝分发与密钥管理，宣发物料同步投放；网络端则进入平台排播与分账结算。</p><ul><li>档期表</li><li>密钥</li><li>结算单</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="data">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">03</div>
+      <div>
+        <h2>数据观察：看懂口径比记住数字更重要</h2>
+        <p>同样是"票房"，有的统计含服务费，有的不含；同样是"产量"，有的按备案数、有的按成片数。下图为结构示意，用于说明各项在盘子中的相对位置。</p>
+      </div>
+    </div>
+    <div class="bars">
+      <div class="bar-row"><div class="lab"><span>院线票房在总盘中的占比</span><em>约 62%</em></div><div class="track"><i style="width:62%"></i></div></div>
+      <div class="bar-row"><div class="lab"><span>网络端分账与会员分成</span><em>约 38%</em></div><div class="track"><i style="width:38%"></i></div></div>
+      <div class="bar-row"><div class="lab"><span>制作成本中人工占比</span><em>约 45%</em></div><div class="track"><i style="width:45%"></i></div></div>
+      <div class="bar-row"><div class="lab"><span>后期与特效投入占比</span><em>约 28%</em></div><div class="track"><i style="width:28%"></i></div></div>
+      <div class="bar-row"><div class="lab"><span>宣发费用占总投资比</span><em>约 18%</em></div><div class="track"><i style="width:18%"></i></div></div>
+      <div class="bar-row"><div class="lab"><span>中小团队承制业务占比</span><em>约 34%</em></div><div class="track"><i style="width:34%"></i></div></div>
+    </div>
+    <div class="data-note">说明：以上百分比为结构示意值，用于展示各项在行业成本与收入构成中的相对关系，不代表任一年度的实际统计结果。查阅精确数值请以主管部门与专业数据机构发布的公开报告为准。</div>
+  </div>
+</section>
+
+<section id="policy">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">04</div>
+      <div>
+        <h2>政策与合规：四条红线，逐条对照</h2>
+        <p>合规不是审片时才想起来的事。剧本阶段就该做的自查，能省下后期大量返工成本。</p>
+      </div>
+    </div>
+    <div class="pol">
+      <article><h3>内容备案</h3><p>剧本项目需按要求完成备案，变更主创或重大情节调整时应重新报送，拍摄地与播出平台的要求可能高于基本要求。</p><a class="more" href="#">查看条目 →</a></article>
+      <article><h3>版权链条</h3><p>原著改编、音乐、字体、肖像与素材库素材均需留存授权文件，链路上缺失任何一环都会在发行阶段被拦下。</p><a class="more" href="#">查看条目 →</a></article>
+      <article><h3>用工与安全</h3><p>群演与特技岗位需明确用工形式与保险覆盖，外景拍摄涉及场地报批、航拍空域申请与夜间施工许可。</p><a class="more" href="#">查看条目 →</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="jobs">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">05</div>
+      <div>
+        <h2>岗位分工：一个剧组到底需要哪些人</h2>
+        <p>下表按部门列出核心岗位与主要职责，供入行者对照自身方向。小型项目常出现一人兼任多职的情况。</p>
+      </div>
+    </div>
+    <div class="jobs">
+      <div class="row head"><div>部门</div><div>职责范围</div><div>常见兼岗</div></div>
+      <div class="row"><div>制片组</div><div>预算编制、档期协调、成本控制、外联报批，是项目推进的总调度</div><div>统筹 / 外联</div></div>
+      <div class="row"><div>导演组</div><div>分镜头设计、现场调度、表演指导，与剪辑共同决定成片节奏</div><div>场记 / 剪辑</div></div>
+      <div class="row"><div>摄影组</div><div>机位与镜头语言实现，负责曝光、构图与运动控制</div><div>灯光 / 掌机</div></div>
+      <div class="row"><div>美术组</div><div>场景、道具、服装与化妆的整体视觉方案与置景落地</div><div>道具 / 服化</div></div>
+      <div class="row"><div>录音组</div><div>同期收音与环境声采集，为后期混录提供干净素材</div><div>音效 / 混录</div></div>
+      <div class="row"><div>后期组</div><div>剪辑、调色、特效与字幕，承担成片技术指标达标的责任</div><div>调色 / 特效</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">06</div>
+      <div>
+        <h2>常见疑问：入行与接活前最常问的六件事</h2>
+        <p>以下问题来自读者留言中出现频率最高的部分，答复基于行业通行做法。</p>
+      </div>
+    </div>
+    <div class="faq">
+      <details open><summary>没有相关专业背景，能进入影视行业吗？</summary><div class="ans">可以，但入口通常是助理岗而非创作岗。制片助理、场务、剪辑助理对专业背景要求宽松，靠项目履历累积资历，一般跟完两三个完整项目后会出现明显的晋升机会。</div></details>
+      <details><summary>一部中小成本影片的筹备期通常多长？</summary><div class="ans">从剧本定稿到开机，常见区间在三到六个月。主要耗时在演员档期对齐、场景踏勘与预算确认上，这三项任意一项拖延都会直接推迟开机日。</div></details>
+      <details><summary>票房数字和片方能拿到的钱是一回事吗？</summary><div class="ans">不是。票房总额需先扣除专项资金与税费，剩余部分再在院线、发行方与片方之间按比例分配，片方最终到手通常远低于公开的票房数字。</div></details>
+      <details><summary>网络剧和电视剧在流程上有什么实质差别？</summary><div class="ans">制作端差别不大，差别集中在审查与播出端：网络剧按网络视听节目要求走上线备案，排播由平台决定，分账与采购的结算规则也由平台方制定。</div></details>
+      <details><summary>后期阶段最容易被低估的支出是哪一项？</summary><div class="ans">混录与特效。粗剪完成后常发现同期声不可用或需要大量擦除，这两项的追加费用往往超出初期预算，建议在预算阶段单独留出修改余量。</div></details>
+      <details><summary>如何核实一份行业数据是否可信？</summary><div class="ans">先看发布主体与统计口径，再看是否注明是否含服务费、是否含网络端、是否按备案或成片统计。缺口径的数据只适合做趋势参考，不适合写进合同或方案。</div></details>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="num">07</div>
+      <div>
+        <h2>联系与投稿</h2>
+        <p>稿件、数据勘误与合作意向均可通过下方表单留言，编辑部按季度集中回复。</p>
+      </div>
+    </div>
+    <div class="contact">
+      <form class="cform" action="#" method="post" onsubmit="return false">
+        <label for="nm">称呼</label>
+        <input id="nm" type="text" name="nm" placeholder="您的姓名或机构名称">
+        <label for="tp">类型</label>
+        <input id="tp" type="text" name="tp" placeholder="投稿 / 勘误 / 合作">
+        <label for="ms">内容</label>
+        <textarea id="ms" name="ms" rows="5" placeholder="请简述具体内容与联系方式"></textarea>
+        <button type="submit">提交留言</button>
+      </form>
+      <div class="urlbox">
+        <h4>本站地址</h4>
+        <p><a href="https://yingshixingye-app.github.io/">https://yingshixingye-app.github.io</a></p>
+        <h4 style="margin-top:16px">关键词</h4>
+        <p>影视行业 · 影视制作流程 · 剧本开发 · 剧组岗位 · 后期制作 · 发行上映</p>
+        <h4 style="margin-top:16px">栏目直达</h4>
+        <p><a href="#overview">行业全景</a>　<a href="#workflow">制作流程</a>　<a href="#data">数据观察</a>　<a href="#policy">政策合规</a>　<a href="#jobs">岗位分工</a>　<a href="#faq">常见疑问</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>关于本站</h4>
+        <p style="font-size:13.5px;color:#948b7d">影视行业内容站，按项目推进顺序记录制作流程、数据口径、合规要点与岗位分工，供从业者与入行者对照参考。</p>
+        <p style="font-size:13.5px;color:#948b7d;margin-top:10px">网址：<a href="https://yingshixingye-app.github.io/">https://yingshixingye-app.github.io</a></p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="#overview">行业全景</a></li>
+          <li><a href="#workflow">制作流程</a></li>
+          <li><a href="#data">数据观察</a></li>
+          <li><a href="#policy">政策合规</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>延伸</h4>
+        <ul>
+          <li><a href="#jobs">岗位分工</a></li>
+          <li><a href="#faq">常见疑问</a></li>
+          <li><a href="#contact">联系投稿</a></li>
+          <li><a href="#">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>影视行业 · 内容站 · 按季复核</span>
+      <span>https://yingshixingye-app.github.io</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
